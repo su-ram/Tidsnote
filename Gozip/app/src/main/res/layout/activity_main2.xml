@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".STT_NFC">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/namebtn"
+            android:layout_width="125dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:textSize="18sp"
+            app:backgroundTint="@color/dark_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.google.android.material.card.MaterialCardView
+
+            android:layout_width="309dp"
+            android:layout_height="544dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="30dp"
+            android:text="@string/app_name"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="305dp"
+                android:layout_height="487dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="기분"
+                        android:textSize="10sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/feeling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+
+                            android:id="@+id/feeling0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="좋음"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+
+                            android:id="@+id/feeling1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="보통"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+
+                            android:id="@+id/feeling2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="나쁨"
+                            android:textSize="10sp" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="건강"
+                        android:textSize="10sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/health"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.209"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
+                        app:layout_constraintVertical_bias="0.618">
+
+
+                        <RadioButton
+                            android:id="@+id/first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="좋음"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="보통"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/thrid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="나쁨"
+                            android:textSize="10sp" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="식사"
+                        android:textSize="10sp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/meal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.209"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView"
+                        app:layout_constraintVertical_bias="0.618">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="좋음"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="보통"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="나쁨"
+                            android:textSize="10sp" />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="식단"
+                        android:textSize="10sp" />
+
+                   <!-- <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:boxBackgroundColor="@color/orange">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:focusable="false"
+                            android:text="메뉴1, 메뉴2, 메뉴3..."
+                            android:textSize="11sp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+-->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_height="wrap_content"
+                            app:singleLine="true">
+
+                            <!-- Chips can be declared here, or added dynamically. -->
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/menu1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:layout_margin="1dp"
+                                android:text="menu2"/>
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/menu2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:layout_margin="1dp"
+                                android:text="menu3"/>
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/menu3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:layout_margin="1dp"
+                                android:text="menu4"/>
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/menu4"
+                                android:layout_width="wrap_content"
+                                android:clickable="false"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:text="menu5"/>
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/menu5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:layout_margin="1dp"
+                                android:text="menu6"/>
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:layout_margin="1dp"
+                                android:text="menu7"/>
+
+                        </com.google.android.material.chip.ChipGroup>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="코멘트"
+                        android:textSize="10sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="45dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:onClick="STT"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/ic_mic_black_24dp"
+                            android:textColorLink="@color/black"
+                            app:icon="@drawable/ic_mic_black_24dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/commentmessage"
+
+                            android:scrollHorizontally="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="193dp"
+                            android:selectAllOnFocus="true"
+                            android:layout_marginLeft="10dp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                android:layout_margin="18dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_text_input2"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="1dp"
+                    app:boxBackgroundColor="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.105">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:focusable="false"
+                        android:hint="ID"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_smoke" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_text_input"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="167dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@color/bisque"
+                    app:boxBackgroundColor="@color/dark_olive_green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.29">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="Comments"
+                        android:maxLines="4"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_smoke" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:focusedByDefault="true"
+        android:backgroundTint="@color/black" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fab"
+        app:backgroundTint="@color/dark_blue"
+        app:backgroundTintMode="src_atop"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bar"
+        app:srcCompat="@drawable/round_check_white_48dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
