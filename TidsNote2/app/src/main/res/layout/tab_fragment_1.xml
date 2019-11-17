@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="5dp"
+                android:text="코멘트 작성"
+                />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_create_black_24dp"/>
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputlayout"
+                android:scrollbars="vertical"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                >
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textinput"
+                    android:hint="Enter Message2."
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:maxLines="5"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" />
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SEND"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/antique_white"
+        android:hint="유치원에서 가정으로"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:fadeScrollbars="false"
+            android:gravity="top"
+            android:inputType="none"
+            android:bufferType="spannable"
+            android:paddingLeft="30dp"
+            android:paddingTop="40dp"
+            android:scrollbars="vertical" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

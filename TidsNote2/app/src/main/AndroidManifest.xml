@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.tidsnote">
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Launch"
+            android:screenOrientation="portrait"
+            android:theme="@style/launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".postDetail" />
+        <activity android:name=".stdDetail" />
+        <activity android:name=".addActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".classInfo" />
+        <activity android:name=".editStudent" />
+        <activity android:name=".postingActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".InputForm"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Request_Notice" />
+        <activity android:name=".Add_Student"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".Login" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.user.tidsnote.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".AlertDetail" />
+        <activity android:name=".StudentDetail"></activity>
+    </application>
+
+</manifest>
