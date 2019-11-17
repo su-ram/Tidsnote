@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+    <item
+        android:id="@+id/add_student_btn"
+        android:title="DONE"
+        android:icon="@drawable/ic_mic_black_24dp"
+        app:actionLayout="@layout/add_student"
+        app:showAsAction="always"/>
+-->
+
+    <item
+        android:title="사진"
+        android:id="@+id/add_photo"
+        android:icon="@drawable/ic_add_a_photo_black_24dp"
+        app:showAsAction="always"/>
+
+
+
+</menu>

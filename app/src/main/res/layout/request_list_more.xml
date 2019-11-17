@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0.5dp"
+        android:id="@+id/more_request_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/num"
+                android:gravity="center"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="1"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toRightOf="@id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname"
+                android:text="Student"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/sname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pname"
+                android:text="Parent"/>
+
+            <ImageView
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/check_time"
+                android:id="@+id/time_icon"
+               android:layout_alignParentBottom="true"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/ic_access_time_black_24dp"/>
+
+            <TextView
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_time"
+                android:text="10:23 AM 7/7 2019"/>
+
+            <TextView
+                android:id="@+id/request_more_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="@string/dummy"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bookmark"
+        android:elevation="10dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
