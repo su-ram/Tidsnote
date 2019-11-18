@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zagum:SpeechRecognitionView-1.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SpeechRecognitionView-1.2.2.aar/2405e8242ec3508594a109bccaf8f77b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SpeechRecognitionView-1.2.2.aar/2405e8242ec3508594a109bccaf8f77b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zagum/SpeechRecognitionView/1.2.2/7e48ac58d42ac7c0396190c01627553b9cde12ad/SpeechRecognitionView-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
