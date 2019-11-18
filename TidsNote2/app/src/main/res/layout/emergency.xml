@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="119"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로 자동신고합니다."/>
+
+    <TextView
+        android:id="@+id/count_down"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="italic|bold"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:text="3"/>
+
+    <TextView
+        android:id="@+id/cancel_emergency"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/orange_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="취소"/>
+</LinearLayout>
