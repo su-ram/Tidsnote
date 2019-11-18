@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="3dp"
+    android:id="@+id/request_item"
+    android:elevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/square_boarder"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+
+                    <LinearLayout
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/photo_request"
+                            android:layout_width="60dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/happy" />
+
+                        <TextView
+                            android:id="@+id/sname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/image"
+                            android:layout_marginTop="2dp"
+                            android:text="SNAME"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/pname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PNAME"
+                            android:textColor="@color/black" />
+
+
+
+
+
+                    </LinearLayout>
+            <LinearLayout
+                android:layout_toRightOf="@id/image"
+                android:id="@+id/request"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/black"
+                    />
+                <TextView
+                    android:nestedScrollingEnabled="false"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="hi"/>
+
+
+            </LinearLayout>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="1"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/num"
+                        android:gravity="center"
+                        android:background="@color/black"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cover"
+        android:background="@color/black"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"></RelativeLayout>
+
+
+</RelativeLayout>
