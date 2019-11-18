@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efe7d0"
+    tools:context=".postDetail">
+
+    <LinearLayout
+        android:id="@+id/postdetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="10dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text=".. 공지사항 .."
+        android:paddingVertical="10dp"
+        android:textColor="@android:color/black" />
+
+        <View
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:textSize="20dp"
+        android:id="@+id/title_view" android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="| 제목"
+         />
+
+    <TextView
+        android:id="@+id/notice_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="| 작성자"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:id="@+id/notice_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="| 7/26 (금) 12:23"/>
+
+
+    <TextView
+        android:layout_marginHorizontal="10dp"
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:id="@+id/notice_datail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/boarder_style"
+        android:layout_marginBottom="-30dp"
+        android:text="contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent" >
+    </TextView>
+
+        <!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postdetail_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+-->
+
+
+        <TextView
+
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@+id/postdetail"
+            android:id="@+id/back2list"
+            android:background="@drawable/boarder_style_4"
+            android:paddingVertical="15dp"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom|center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
