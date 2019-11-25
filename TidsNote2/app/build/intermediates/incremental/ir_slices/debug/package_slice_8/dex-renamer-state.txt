@@ -1,4 +1,0 @@
-#Tue Oct 22 00:34:09 KST 2019
-base.0=C\:\\Users\\user\\TidsNote2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
-path.0=classes.dex
-renamed.0=classes.dex
