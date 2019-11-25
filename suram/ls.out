@@ -1,0 +1,12 @@
+total 44
+-rw-r--r-- 1 root root   18  4월  4 11:40 manifest.txt
+-rw-r--r-- 1 root root   77  4월  4 12:13 startup.sh
+drwxr-xr-x 2 root root 4096  4월  5 15:17 Test
+-rw-r--r-- 1 root root  314  4월  4 11:39 Test1.class
+-rw-r--r-- 1 root root  971  4월  4 11:46 Test1.jar
+-rw-r--r-- 1 root root  125  4월  4 11:38 Test1.java
+-rw-r--r-- 1 root root  390  4월  4 11:35 Test2.class
+-rw-r--r-- 1 root root  440  4월  4 01:30 testjava.class
+-rw-r--r-- 1 root root  132  4월  4 01:30 testjava.java
+-rw-r--r-- 1 root root   43  4월  4 01:32 testpy.py
+drwxr-xr-x 2 root root 4096  4월  4 20:52 transfer
