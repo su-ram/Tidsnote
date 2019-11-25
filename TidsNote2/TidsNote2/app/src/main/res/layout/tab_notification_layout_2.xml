@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    style="?attr/actionButtonStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:background="@drawable/tab_ripple">
+
+    <TextView
+        android:id="@+id/tab_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:text="상태정보" />
+
+    <TextView
+        android:id="@+id/alert_badge2"
+        android:layout_width="10dp"
+        android:textStyle="bold"
+        android:layout_height="10dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="10dp"
+        android:textSize="5dp"
+        android:textColor="@color/white"
+        android:layout_gravity="right|end|top"
+        android:background="@drawable/tab_notification"
+        android:gravity="center"
+        />
+
+
+
+</FrameLayout>
