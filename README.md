@@ -1,11 +1,13 @@
 Tidsnote 
 ============ 
 
-:book:***Introduction***
+
+:book: ***Introduction***
 
 소개내용
 
-:eyes:***Screenshots***
+
+:eyes: ***Screenshots***
 
 <div>
 <img src="https://user-images.githubusercontent.com/20367043/70742381-bfca6600-1d60-11ea-9177-53a673a2aa70.png" width="200"></img>
