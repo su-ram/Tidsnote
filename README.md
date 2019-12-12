@@ -1,8 +1,7 @@
-How to use Markdown? 
+Tidsnote 
 ============ 
-Markdown 
 
-:book:Introduction
+:book:***Introduction***
 
 소개내용
 
