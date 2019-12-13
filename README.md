@@ -21,6 +21,7 @@
 - Server os : Ubuntu
 - Back end : Java, Python
 - DB : Mysql
+- Open API : FCM, MS Azure Cognitive 
 
 &nbsp;
 
