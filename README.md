@@ -1,4 +1,4 @@
-# 티즈노트 Tidsnote
+# Tidsnote
 <img src="https://user-images.githubusercontent.com/20367043/70778014-9a6f4380-1dc4-11ea-85c0-cd62f52bc49c.png" width="100%"></img>
 >티즈노트
 
