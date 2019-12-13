@@ -13,6 +13,7 @@
 
 - Mobile os : Android(Java)
 - Server os : Ubuntu
+- Back end : Java, Python
 - DB : Mysql
 
 
