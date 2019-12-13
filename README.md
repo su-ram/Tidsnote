@@ -13,6 +13,7 @@
 
 *2019.03 ~ 2019. 10*
 
+&nbsp;
 
 ##  :art:  사용 기술 Skill sets
 
@@ -21,8 +22,7 @@
 - Back end : Java, Python
 - DB : Mysql
 
-
-
+&nbsp;
 
 ##  :gem: 결과물 Results 
 
@@ -37,5 +37,10 @@
 <img src="https://user-images.githubusercontent.com/20367043/70744165-83990480-1d64-11ea-97aa-12514d004d37.png" width="25%"></img>
 </div>
 
+&nbsp;
+
 ## :tv: 작동 영상 Video 
 https://www.youtube.com/watch?v=_FbVRFgZP2s
+
+&nbsp;
+
