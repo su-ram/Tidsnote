@@ -18,7 +18,7 @@
 
 
 
-##  :gem: 실제 화면 Screenshots 
+##  :gem: 결과물 Results 
 
 <div>
 <img src="https://user-images.githubusercontent.com/20367043/70742381-bfca6600-1d60-11ea-9177-53a673a2aa70.png" width="25%"></img>
