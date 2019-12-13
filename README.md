@@ -1,4 +1,4 @@
-#Tidsnote 
+# Tidsnote 
 
 
 
@@ -8,7 +8,8 @@ NFC와 STT를 이용한 어린이집 교사를 위한 원아수첩 작성 모바
 
 :art:  ***Skill sets***
 
-안드로이드, 우분투,
+- mobile os : android
+- server os : ubuntu
 
 
 :eyes: ***Screenshots***
