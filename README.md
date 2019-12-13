@@ -1,4 +1,4 @@
-## Tidsnote
+# Tidsnote
 
 NFC와 STT를 이용한 어린이집 교사를 위한 원아수첩 작성 모바일 어플리케이션
 
