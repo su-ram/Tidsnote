@@ -4,14 +4,14 @@ NFC와 STT를 이용한 어린이집 교사를 위한 원아수첩 작성 모바
 
 
 
-## Skill sets :art:
+### Skill sets :art:
 
 - mobile os : android
 - server os : ubuntu
 
 
 
-## Screenshots :sparkles:
+### Screenshots :sparkles:
 
 <div>
 <img src="https://user-images.githubusercontent.com/20367043/70742381-bfca6600-1d60-11ea-9177-53a673a2aa70.png" width="25%"></img>
