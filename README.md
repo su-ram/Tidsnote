@@ -41,7 +41,6 @@
 &nbsp;
 
 ## :tv: 작동 영상 Video 
-https://www.youtube.com/watch?v=_FbVRFgZP2s
 
 &nbsp;
 
