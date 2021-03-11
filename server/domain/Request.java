@@ -8,7 +8,6 @@ public class Request implements Serializable{
     String stu_name, par_name, content,stu_id,request_id;
     Date date;
     byte[] photo;
-
     boolean checked=false;
 
     Request (){
@@ -16,8 +15,7 @@ public class Request implements Serializable{
     }
 
     public Request(String sname,String pname,String text){
-        //SimpleDateFormat s = new SimpleDateFormat("yyyy/dd/MM hh:ss");
-        //String curDate = s.format(new Date());
+
         this.stu_name=sname;
         this.par_name=pname;
         this.content=text;
@@ -31,6 +29,7 @@ public class Request implements Serializable{
     public void setRequest_id(String request_id) {
         this.request_id = request_id;
     }
+
     public byte[] getPhoto() {
         return photo;
     }

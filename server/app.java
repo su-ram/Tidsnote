@@ -6,48 +6,38 @@ import java.io.*;
 import java.net.InetSocketAddress;
 public class Server_suram{
 
-
-
     public static void main(String[] args){
 
         final int SERVER_PORT = 12345;
         ServerSocket serverSocket = null;
         Socket client;
 
-
         try{
             serverSocket= new ServerSocket();
             serverSocket.bind(new InetSocketAddress(SERVER_PORT));
 
 
-
-             
-
             while(true){
 
                 client = serverSocket.accept();
-                //System.out.println("New Client.");
-
                 Taking thread = new Taking(client);
                 thread.start();
-
 
                 try{
 
                     thread.join();
                     client.close();
-                    //System.out.println("Complete the request.");
 
-            
                 }catch(Exception e){
                     e.printStackTrace();
-
                 }
 
             }
 
         }catch (IOException e){
+
             e.printStackTrace();
+
         }finally{
             
             if(serverSocket != null){
@@ -58,17 +48,5 @@ public class Server_suram{
                 }
             }
         }
-
-
-
-
     }
-
-
-
-
-
-
-
-
 }

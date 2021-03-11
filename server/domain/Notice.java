@@ -29,17 +29,13 @@ public class Notice implements Serializable {
         this.rowid = rowid;
     }
 
-
-public ArrayList<byte[]> getPhotos() {
+    public ArrayList<byte[]> getPhotos() {
         return photos;
     }
 
     public void setPhotos(ArrayList<byte[]> photos) {
         this.photos = photos;
     }
-
-
-
 
     public void setWriter(String writer) {
         this.writer = writer;
@@ -48,7 +44,6 @@ public ArrayList<byte[]> getPhotos() {
     public void setContent(String content) {
         this.content = content;
     }
-
 
     public void setTitle(String title) {
         this.title = title;
@@ -69,6 +64,7 @@ public ArrayList<byte[]> getPhotos() {
     public String getWriter(){
         return this.writer;
     }
+
     public String getContent(){
         return this.content;
     }

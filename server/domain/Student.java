@@ -7,17 +7,6 @@ import java.util.Date;
 
 
 public class Student implements Serializable {
-    public void setStatus(int[] status) {
-        this.status = status;
-    }
-
-    public String getCommon() {
-        return common;
-    }
-
-    public void setCommon(String common) {
-        this.common = common;
-    }
 
     int pos,gender, age;
     int[] status = new int[3];
@@ -25,9 +14,9 @@ public class Student implements Serializable {
     boolean done=false;
     Date date;
     ArrayList<String> stt_message;
- 	
-    
+
     Student(){
+
         this.status[0]=-1;
         this.status[1]=-1;
         this.status[2]=-1;
@@ -39,6 +28,17 @@ public class Student implements Serializable {
         this.parent_name="parent ";
         this.student_name="student";
 
+    }
+    public void setStatus(int[] status) {
+        this.status = status;
+    }
+
+    public String getCommon() {
+        return common;
+    }
+
+    public void setCommon(String common) {
+        this.common = common;
     }
 
     public int getGender() {
@@ -68,6 +68,7 @@ public class Student implements Serializable {
     public void setPos(int pos){
         this.pos=pos;
     }
+
     public int getPos(){
         return pos;
     }
@@ -121,7 +122,6 @@ public class Student implements Serializable {
         this.parent_message = parent_message;
     }
 
-
     public String showLast(){
         return stt_message.get(stt_message.size()-1);
     }
@@ -146,7 +146,7 @@ public class Student implements Serializable {
         this.comment=this.comment+"\n\n[공통사항]\n"+str;
     }
 
-public int getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -162,8 +162,7 @@ public int getAge() {
         this.class_id = class_id;
     }
 
-
-     public ArrayList<String> getStt_message() {
+    public ArrayList<String> getStt_message() {
         return stt_message;
     }
 
@@ -174,16 +173,18 @@ public int getAge() {
     public void addStt_message(String str){
         this.stt_message.add(str);
     }
+
     public boolean isWriting(){
 
-
         if (this.done){
+
             return false;
+
         }else{
 
             if (comment.equals("") && comment.equals("comment") && status[0] == -1 && status[1] == -1 && status[2] == -1){
-                //아예 미입력
                 return false;
+
             }else{
                 return true;
             }

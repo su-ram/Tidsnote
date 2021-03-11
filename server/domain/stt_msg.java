@@ -5,11 +5,11 @@ import java.util.Date;
 import java.io.Serializable;
 
 public class stt_msg implements Serializable{
+
     String stt;
     String msg;
     boolean stt_selected=false,msg_selected=false;
     Date date;
-
 
     public String getStt() {
         return stt;
@@ -42,6 +42,7 @@ public class stt_msg implements Serializable{
     public void setMsg_selected(boolean msg_selected) {
         this.msg_selected = msg_selected;
     }
+
     public Date getDate() {
         return date;
     }

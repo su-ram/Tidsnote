@@ -8,7 +8,6 @@ public class Photo {
     int rowid=0;
     String type;
 
-	
     public String getType() {
         return type;
     }

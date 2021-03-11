@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MenuFile implements Serializable {
+
     String fileName;
     byte[] pdfFile;
 
@@ -12,7 +13,6 @@ public class MenuFile implements Serializable {
         this.fileName = fileName;
         this.pdfFile = pdfFile;
     }
-
 
     public MenuFile(String fileName) {
         this.fileName = fileName;
@@ -22,8 +22,6 @@ public class MenuFile implements Serializable {
     public MenuFile(){
 
     }
-
-
 
     public String getFileName() {
         return fileName;
